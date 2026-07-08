@@ -4,7 +4,9 @@ import json
 import os
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+tz_cst = timezone(timedelta(hours=8))
+now_cst = lambda: datetime.now(tz_cst)
 from pathlib import Path
 
 import pandas as pd
@@ -46,7 +48,7 @@ def run():
         logger.error("行情获取失败")
         return 1
 
-    snapshot_time = datetime.now().strftime("%H:%M:%S")
+    snapshot_time = now_cst().strftime("%H:%M:%S")
     snapshot = to_dict(df)[:200]
     numeric = df.select_dtypes(include="number")
     stats = {
@@ -94,8 +96,7 @@ def run():
     try:
         webhook = os.environ.get("WECHAT_WEBHOOK", "")
         if webhook:
-            from datetime import datetime as dt2
-            dt_str = dt2.now().strftime("%Y-%m-%d %H:%M:%S")
+            dt_str = now_cst().strftime("%Y-%m-%d %H:%M:%S")
             lines = [
                 f"## 【A股超短线量能信号推送】{dt_str}",
                 f"> 周期：超短线1-5日",
