@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+data/raw/
+data/cache/
+_site/
+*.lnk
+start.bat

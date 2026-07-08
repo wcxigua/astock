@@ -1,0 +1,26 @@
+{
+  "600288": {
+    "name": "大恒科技",
+    "buy_price": 16.01,
+    "target_price": 18.48,
+    "stop_price": 16.25,
+    "updated_at": "07-08 19:41",
+    "alerts_fired": {
+      "buy": false,
+      "target": false,
+      "stop": false
+    }
+  },
+  "301516": {
+    "name": "中远通",
+    "buy_price": 18.03,
+    "target_price": 20.65,
+    "stop_price": 18.16,
+    "updated_at": "07-08 19:41",
+    "alerts_fired": {
+      "buy": false,
+      "target": false,
+      "stop": false
+    }
+  }
+}

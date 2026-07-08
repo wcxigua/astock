@@ -1,0 +1,14 @@
+2026-07-07 20:07:03 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot_em]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:07:06 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_hist]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:07:12 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot_em]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:07:17 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot_em]: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:10:06 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot]: Can not decode value starting with character '<'
+2026-07-07 20:10:07 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot]: Can not decode value starting with character '<'
+2026-07-07 20:10:07 | ERROR   | collector.base:32 | 数据抓取失败 [stock_zh_a_spot]: Can not decode value starting with character '<'
+2026-07-07 20:13:40 | ERROR   | collector.realtime:65 | 全市场行情抓取失败 (第52页): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:13:42 | ERROR   | collector.realtime:65 | 全市场行情抓取失败 (第1页): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:13:42 | ERROR   | collector.realtime:65 | 全市场行情抓取失败 (第1页): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:14:05 | ERROR   | collector.realtime:75 | 全市场行情抓取失败 (第1页, 重试3次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:14:11 | ERROR   | collector.realtime:75 | 全市场行情抓取失败 (第1页, 重试3次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:14:16 | ERROR   | collector.realtime:75 | 全市场行情抓取失败 (第1页, 重试3次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-07-07 20:34:54 | ERROR   | collector.realtime:31 | 批量查询失败 (第250批): HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Read timed out. (read timeout=15)
