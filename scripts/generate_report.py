@@ -5,8 +5,8 @@ import os
 import sys
 import time
 from datetime import datetime, timezone, timedelta
-tz_cst = timezone(timedelta(hours=8))
-now_cst = lambda: datetime.now(tz_cst)
+def now_cst():
+    return datetime.now(timezone(timedelta(hours=8)))
 from pathlib import Path
 
 import pandas as pd
@@ -42,6 +42,7 @@ def run():
     risk_control = RiskController()
     trading_signal = TradingSignal()
 
+    logger.info(f"当前北京时间: {now_cst().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info("获取实时行情...")
     df = realtime.fetch_all_market()
     if df is None or df.empty:
