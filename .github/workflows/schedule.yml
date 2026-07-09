@@ -1,6 +1,8 @@
 name: A股定时选股
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '25 1 * * 1-5'     # 09:25 CST 早盘推送
     - cron: '*/15 2-3 * * 1-5'  # 10:00-11:45 CST 上午时段
