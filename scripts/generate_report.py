@@ -94,8 +94,9 @@ def run():
     (OUTPUT / "index.html").write_text(html, encoding="utf-8")
     logger.info(f"_site/index.html 已生成 ({len(embedded_json)//1024}KB 数据)")
 
+    skip_push = os.environ.get("GITHUB_EVENT_NAME") == "push"
     try:
-        webhook = os.environ.get("WECHAT_WEBHOOK", "")
+        webhook = os.environ.get("WECHAT_WEBHOOK", "") if not skip_push else ""
         if webhook:
             dt_str = now_cst().strftime("%Y-%m-%d %H:%M:%S")
             lines = [
